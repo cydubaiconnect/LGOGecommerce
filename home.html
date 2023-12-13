@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ecommerce webiste</title>
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- or -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container1">
+      <header>
+        <div class="nav">
+          <div class="nav-sec">
+            <h2 class="logo">LGOG STORE</h2>
+            <div id="menu" class="barmenu" onclick="showActive(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+            <div class="nav-home">
+              <a class="anotherAre" href="#">HOME PAGE</a>
+              <a class="new3" href="" id="drop"
+                >NEW ARRIVALS
+                <div class="new-stock">
+                  <div class="stock">
+                    <div class="item1">
+                      <h4>VIEW ALL NEW PRODUCTS</h4>
+                      <ul>
+                        <li>DRESS</li>
+                        <li>T-SHIRT</li>
+                        <li>PANTS</li>
+                        <li>SKIRT</li>
+                        <li>SW-SHIRT</li>
+                        <li>SHORTS</li>
+                      </ul>
+                    </div>
+                    <div class="item2">
+                      <h4>LGOG STORE</h4>
+                      <ul>
+                        <li>OVERALL</li>
+                        <li>LEGGING</li>
+                        <li>JACKET</li>
+                        <li>TANG TOP</li>
+                        <li>TUNIC</li>
+                        <li>GILE</li>
+                      </ul>
+                    </div>
+                    <div class="item3">
+                      <h4>LGOG STORE</h4>
+                      <ul>
+                        <li>ACCESSORIES</li>
+                        <li>BOMBER</li>
+                        <li>BUSTIER</li>
+                        <li>CROP TOP</li>
+                        <li>BLUSE</li>
+                        <li>PULLOVER</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a class="new2" id="dropdown" href=""
+                >SPECIAL PRICE
+                <div class="new">
+                  <div class="stock-1">
+                    <div class="item1">
+                      <h4>VIEW ALL SPECIAL PRICE</h4>
+                      <ul>
+                        <li>T-SHIRT</li>
+                        <li>PANTS</li>
+                        <li>DRESS</li>
+                        <li>SW-SHIRT</li>
+                        <li>SKIRT</li>
+                      </ul>
+                    </div>
+                    <div class="item2">
+                      <h4>LGOG STORE</h4>
+                      <ul>
+                        <li>OVERALL</li>
+                        <li>LEGGING</li>
+                        <li>TUNIC</li>
+                        <li>CROP TOP</li>
+                        <li>BLUSE</li>
+                      </ul>
+                    </div>
+                    <div class="item3">
+                      <h4>LGOG STORE</h4>
+                      <ul>
+                        <li>ACCESSORIES</li>
+                        <li>SHORTS</li>
+                        <li>TANG TOP</li>
+                        <li>JACKET</li>
+                        <li>BUSTIER</li>
+                        <li>GILE</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a class="anotherArea new2" href="">BEST SELLERS</a>
+            </div>
+            <div class="nav-bar">
+              <a href="#">About</a>
+              <a href="#">Contact us</a>
+              <a href="logout.php">LogOut</a>
+              <i class="bx bx-shopping-bag" id="cart-icon"></i>
+            </div>
+
+            <!--cart-->
+            <div class="cart">
+              <h2 class="cart-title">Your Cart</h2>
+
+              <!--cart content-->
+              <div class="cart-content"></div>
+
+              <!--Tool-->
+              <div class="total">
+                <div class="total-title">Total</div>
+                <div class="total-price">$0</div>
+              </div>
+
+              <!--Buy button-->
+              <button type="button" class="btn-buy">Buy Now</button>
+
+              <!--cart close-->
+              <i class="bx bx-x" id="close-cart"></i>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="section01">
+        <div class="title">
+          <h2>THE BASICS OF COMFORT</h2>
+          <p>
+            Cozy hoodies, crewnecks and sweatpants combine comfort and style
+          </p>
+        </div>
+
+        <div class="details">
+          <button><a href="#new">SHOP MEN </a> &#8594;</button>
+          <button><a href="#women">SHOP WOMEN</a> &#8594;</button>
+          <button><a href="#kid"> SHOP KIDS </a> &#8594;</button>
+        </div>
+        <hr />
+      </section>
+
+      <section id="new" class="shop container">
+        <h4 class="section-title">FEATURED COLLECTION</h4>
+        <h2 class="section-title">NEW ARRIVALS</h2>
+        <!--shop content-->
+        <div class="shop-content">
+          <!--box1-->
+          <div class="product-box">
+            <img src="img/product1.jpg" alt="" class="product-img" />
+            <h2 class="product-title">Sneakers</h2>
+            <span class="price">$100</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box2-->
+          <div class="product-box">
+            <img src="img/product2.jpg" alt="" class="product-img" />
+            <h2 class="product-title">Bags</h2>
+            <span class="price">$25</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box3-->
+          <div class="product-box">
+            <img src="img/product3.jpg" alt="" class="product-img" />
+            <h2 class="product-title">Water Can</h2>
+            <span class="price">$20</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box4-->
+          <div class="product-box">
+            <img src="img/product4.jpg" alt="" class="product-img" />
+            <h2 class="product-title">Metal Glass</h2>
+            <span class="price">$156</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!--box5-->
+          <div class="product-box">
+            <img src="img/product5.jpg" alt="" class="product-img" />
+            <h2 class="product-title">Laptop</h2>
+            <span class="price">$250</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box6-->
+          <div class="product-box">
+            <img src="img/product6.jpg" alt="" class="product-img" />
+            <h2 class="product-title">Phones</h2>
+            <span class="price">$1,225</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box7-->
+          <div class="product-box">
+            <img src="img/product8.jpg" alt="" class="product-img" />
+            <h2 class="product-title">Apple Watch</h2>
+            <span class="price">$1,500</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box8-->
+          <div class="product-box">
+            <img src="img/product9.jpg" alt="" class="product-img" />
+            <h2 class="product-title">shoes</h2>
+            <span class="price">$100</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box9-->
+          <div class="product-box">
+            <img src="img/product11.jpg" alt="" class="product-img" />
+            <h2 class="product-title">Female wears</h2>
+            <span class="price">$70</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box10-->
+          <div class="product-box">
+            <img src="img/product12.jpg" alt="" class="product-img" />
+            <h2 class="product-title">iStock | Boutique, Kids clothing</h2>
+            <span class="price">$86</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box11-->
+          <div class="product-box">
+            <img src="img/product13.jpg" alt="" class="product-img" />
+            <h2 class="product-title">Greenville, SC</h2>
+            <span class="price">$56</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box12-->
+          <div class="product-box">
+            <img src="img/product14.jpg" alt="" class="product-img" />
+            <h2 class="product-title">
+              Men's stainless steel classic wrist watch
+            </h2>
+            <span class="price">$95</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+        </div>
+        <h6><a href="">VIEW ALL</a></h6>
+      </section>
+
+      <section class="collection">
+        <h4 class="section-title">FEATURED COLLECTION</h4>
+        <h2 class="section-title">PANT DRESS</h2>
+        <!--shop content-->
+        <div class="content">
+          <!--box1-->
+          <div class="product-box">
+            <img src="img/pant.png" alt="" class="product-img" />
+          </div>
+
+          <!--box2-->
+          <div class="product-box">
+            <img src="img/pant2.png" alt="" class="product-img" />
+          </div>
+
+          <!--box3-->
+          <div class="product-box">
+            <img src="img/pant3.png" alt="" class="product-img" />
+          </div>
+
+          <!--box4-->
+          <div class="product-box">
+            <img src="img/pant4.png" alt="" class="product-img" />
+          </div>
+        </div>
+        <h6><a href="">VIEW ALL</a></h6>
+      </section>
+
+      <section id="women" class="shop container">
+        <h4 class="section-title">FEATURED COLLECTION</h4>
+        <h2 class="section-title">WOMEN WEARS</h2>
+        <!--shop content-->
+        <div class="shop-content">
+          <!--box1-->
+          <div class="product-box">
+            <img src="img/women1.png" alt="" class="product-img" />
+            <h2 class="product-title">Lingerie</h2>
+            <span class="price">$45</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box2-->
+          <div class="product-box">
+            <img src="img/women2.png" alt="" class="product-img" />
+            <h2 class="product-title">Lingeria Stock</h2>
+            <span class="price">$22</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box3-->
+          <div class="product-box">
+            <img src="img/women3.png" alt="" class="product-img" />
+            <h2 class="product-title">Ladies Nightwear</h2>
+            <span class="price">$46</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box4-->
+          <div class="product-box">
+            <img src="img/women4.png" alt="" class="product-img" />
+            <h2 class="product-title">Women Ladies Nightwear</h2>
+            <span class="price">$57</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+          <!--box5-->
+          <div class="product-box">
+            <img src="img/women5.png" alt="" class="product-img" />
+            <h2 class="product-title">Generic Womens Pyjamas Cotton</h2>
+            <span class="price">$78</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box6-->
+          <div class="product-box">
+            <img src="img/women6.png" alt="" class="product-img" />
+            <h2 class="product-title">Women Nightwear 5in1</h2>
+            <span class="price">$125</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box7-->
+          <div class="product-box">
+            <img src="img/women7.png" alt="" class="product-img" />
+            <h2 class="product-title">Silk Satin Pajamas Set Long Lingerie</h2>
+            <span class="price">$85</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box8-->
+          <div class="product-box">
+            <img src="img/women8.png" alt="" class="product-img" />
+            <h2 class="product-title">Satin Women Black Night Suit, Shirt</h2>
+            <span class="price">$80</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box9-->
+          <div class="product-box">
+            <img src="img/women9.png" alt="" class="product-img" />
+            <h2 class="product-title">Women Pajamas</h2>
+            <span class="price">$120</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box10-->
+          <div class="product-box">
+            <img src="img/women10.png" alt="" class="product-img" />
+            <h2 class="product-title">
+              Women's Suit With Special Leather Belt, Plus Size Suit
+            </h2>
+            <span class="price">$110</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box11-->
+          <div class="product-box">
+            <img src="img/women11.png" alt="" class="product-img" />
+            <h2 class="product-title">Ladies outfit</h2>
+            <span class="price">$212</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+
+          <!--box12-->
+          <div class="product-box">
+            <img src="img/women12.png" alt="" class="product-img" />
+            <h2 class="product-title">ladies wears</h2>
+            <span class="price">$87</span>
+            <i class="bx bx-shopping-bag add-cart"></i>
+          </div>
+        </div>
+        <h6><a href="">VIEW ALL</a></h6>
+      </section>
+
+      <section class="general">
+        <h2>OUTSTANDING WEARS</h2>
+        <div class="gen">
+          <img src="img/outstand.png" alt="" />
+          <img src="img/outstand1.png" alt="" />
+        </div>
+      </section>
+
+      <div id="kid" class="col-fashion">
+        <div class="col-details">
+          <div class="col-text">
+            <h1 style="padding-bottom: 0.5em">LGOG STORE | CREATIVE FASHION</h1>
+            <p>
+              The Designer Streetwear brand that inspires you to
+              <strong>𝐂𝐡𝐚𝐥𝐥𝐞𝐧𝐠𝐞, 𝐂𝐡𝐚𝐧𝐠𝐞, 𝐂𝐨𝐧𝐪𝐮𝐞𝐫 </strong>
+            </p>
+            <p>📍 Shop LGOG STORE OWERRI IMO STATE NIGERIA</p>
+          </div>
+          <div class="col-img">
+            <div class="col1">
+              <div class="product-box">
+                <img src="img/kid1.png" alt="" class="product-img" />
+              </div>
+              <div class="product-box">
+                <img src="img/kid2.png" alt="" class="product-img" />
+              </div>
+              <div class="product-box">
+                <img src="img/kid3.png" alt="" class="product-img" />
+              </div>
+              <div class="product-box">
+                <img src="img/kid4.png" alt="" class="product-img" />
+              </div>
+            </div>
+            <div class="col2">
+              <div class="box">
+                <img src="img/col1.png" alt="" class="product-img" />
+              </div>
+            </div>
+            <div class="col3">
+              <div class="product-box">
+                <img src="img/kid5.png" alt="" class="product-img" />
+              </div>
+              <div class="product-box">
+                <img src="img/kid6.png" alt="" class="product-img" />
+              </div>
+              <div class="product-box">
+                <img src="img/kid7.png" alt="" class="product-img" />
+              </div>
+              <div class="product-box">
+                <img src="img/kid8.png" alt="" class="product-img" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="footInfo">
+          <div class="about">
+            <h2>ABOUT LGOG STORE</h2>
+            <p style="margin-bottom: 1em">
+              As Via Delle Rose, we started in 2004, based in Italy. In 2007 we
+              expand to different countries. Being different, we attract
+              attention. Today we can see, listen and buy Via delle Rose in 20
+              countries.
+            </p>
+            <a
+              href=""
+              style="text-decoration: none; color: rgb(255, 255, 255, 0.5)"
+              >More Details</a
+            >
+            <div class="aboutIcons">
+              <a href=""></a><a href=""></a><a href=""></a>
+            </div>
+          </div>
+          <div class="categories">
+            <h2>CATEFORIES</h2>
+            <ul>
+              <li>NEW ARRIVALS</li>
+              <li>CLOTHES</li>
+              <li>PANTS</li>
+              <li>DRESS</li>
+              <li>T-SHIRT</li>
+              <li>SW-SHIRT</li>
+            </ul>
+          </div>
+          <div class="policy">
+            <h2>POLICIES</h2>
+            <ul>
+              <li>Refund Policy</li>
+              <li>Privacy Policy</li>
+              <li>Terms of Service</li>
+              <li>Shipping Policy</li>
+              <li>Contact Information</li>
+            </ul>
+          </div>
+          <div class="newslet">
+            <h2>NEWSLETTER</h2>
+            <p>Sign up to our newsletter to receive exclusive offers</p>
+            <input
+              type="text"
+              placeholder="email"
+              id="email"
+              name="email"
+            /><br /><br />
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+        <a class="a2" href="">@ 2023 -LGOG STORE -NIGERIS POWERED BY SHOPIFY</a>
+      </footer>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
